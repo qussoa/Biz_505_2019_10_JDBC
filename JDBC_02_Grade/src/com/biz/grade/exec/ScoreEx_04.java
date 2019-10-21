@@ -38,15 +38,15 @@ public static void main(String[] args) {
 		int intScore = Integer.valueOf(strScore);
 		
 		long s_id = (long)(Math.random()*100000);
-		ScoreDTO scoreDTO = ScoreDTO.builder()
+		ScoreDTO dvo = ScoreDTO.builder()
 				.s_id(s_id)
 				.s_std(strNum)
 				.s_score(intScore)
 				.s_subject(strSubject)
 				.build();
 
-				int ret = sc.insert(scoreDTO); 
-				if(ret > 1) {
+				int ret = sc.insert(dvo); 
+				if(ret > 0) {
 					System.out.println("데이터 추가 완료");
 				}else {
 					System.out.println("데이터 추가 실패");

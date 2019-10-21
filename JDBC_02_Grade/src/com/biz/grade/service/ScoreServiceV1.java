@@ -36,6 +36,7 @@ public class ScoreServiceV1 extends ScoreService {
 			
 			int ret = pStr.executeUpdate();
 			dbConn.close();
+			return ret;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
