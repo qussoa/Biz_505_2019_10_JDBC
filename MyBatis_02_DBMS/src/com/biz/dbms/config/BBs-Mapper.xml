@@ -47,7 +47,7 @@
 	</update>
 
 	<delete id="delete">
-		DELETE FORM tbl_bbs
+		DELETE FROM tbl_bbs
 		WHERE bs_id = #{bs_id}
 	</delete>
 
