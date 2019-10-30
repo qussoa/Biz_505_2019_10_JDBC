@@ -15,15 +15,12 @@ public class IolistServiceV2 extends IolistServiceV1 {
 			String strDName = scan.nextLine();
 			if(strDName.equals("0"))
 				break;
-			if(strDName.trim().isEmpty()) {
-				System.out.println("거래처 입력");
-				continue;
+			System.out.print("거래처 코드(종료 : 0)  : ");
+			String strDCode = scan.nextLine();
+			if(strDCode.equals("0")) break;
+			if(strDCode.trim().isEmpty()) {
+				String strTMDCode = d
 			}
-	
-			if(vo != null) {
-				this.viewIDetail(vo);
-			}
-	
 		}
 	}
 	public void viewIDetail(IolistVO vo) {

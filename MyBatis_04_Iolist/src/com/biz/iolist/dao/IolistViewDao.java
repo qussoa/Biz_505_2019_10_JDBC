@@ -11,7 +11,6 @@ public interface IolistViewDao {
 		
 		public List<IolistVO> findByDCode(String io_dcode);
 		public List<IolistVO> findByPCode(String io_pcode);
-		public List<IolistVO> findByDname(String d_name);
-		public IolistVO findByDdname(String d_name);
+		public List<IolistVO> findByDName(String d_name);
 		public List<IolistVO> findByPName(String p_name);
 }

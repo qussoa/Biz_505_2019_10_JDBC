@@ -7,7 +7,6 @@
 	<select id="selectAll" resultType="Ivo">
 		SELECT * FROM view_iolist
 	</select>
-	<select id="findById" resultType="Ivo"></select>
 	<insert id="insert" parameterType="Ivo"></insert>
 	<update id="update" parameterType="Ivo"></update>
 	<delete id="delete" parameterType="Ivo"></delete>
